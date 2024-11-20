@@ -1,5 +1,6 @@
 [versions]
 agp = "8.6.1"
+converterGson = "2.9.0"
 gson = "2.11.0"
 javaxAnnotationApi = "1.3.2"
 junit = "4.13.2"
@@ -12,6 +13,7 @@ constraintlayout = "2.1.4"
 retrofit = "2.11.0"
 
 [libraries]
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 javax-annotation-api = { module = "javax.annotation:javax.annotation-api", version.ref = "javaxAnnotationApi" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
