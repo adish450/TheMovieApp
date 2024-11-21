@@ -15,18 +15,17 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.http.Query;
 
-public class Repository {
+public class MovieRepository {
     private final Application application;
     private ArrayList<Movie> movies = new ArrayList<>();
     private final MutableLiveData<List<Movie>> popularMovies = new MutableLiveData<List<Movie>>();
 
-    Repository (Application application) {
+    public MovieRepository(Application application) {
         this.application = application;
     }
 
-    private MutableLiveData<List<Movie>> getPopularMovies () {
+    public MutableLiveData<List<Movie>> getPopularMovies() {
         MovieApiService retrofitInstance = RetrofitInstance.getService();
         Call<Result> call = retrofitInstance.getPopularMovies(application.getApplicationContext().getString(R.string.api_key));
         call.enqueue( // Asynchronous method call
