@@ -46,6 +46,8 @@ dependencies {
     implementation(libs.swiperefreshlayout)
     implementation(libs.constraintlayout)
     implementation(libs.javax.annotation.api)
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

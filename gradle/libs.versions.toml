@@ -1,6 +1,8 @@
 [versions]
 agp = "8.6.1"
+compiler = "4.14.2"
 converterGson = "2.9.0"
+glide = "4.16.0"
 gson = "2.11.0"
 javaxAnnotationApi = "1.3.2"
 junit = "4.13.2"
@@ -14,7 +16,9 @@ retrofit = "2.11.0"
 swiperefreshlayout = "1.1.0"
 
 [libraries]
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 javax-annotation-api = { module = "javax.annotation:javax.annotation-api", version.ref = "javaxAnnotationApi" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
